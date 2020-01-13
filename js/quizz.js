@@ -74,17 +74,21 @@ function quizz1Verify(){
     $.get('quizz/quizzResult.php', quizzDisplay);
     score1Display.innerHTML = score + ' / 10';
 
-    if(score <= 4 || score == 0){
-        resultDisplay.innerHTML = "Dommage tu n'as fait que " + score + " bonnes réponse sur 10 entraîne toi et reessaye."
-        score1Display.setAttribute("class", "badRate")
-    }
-    if(score >= 5 && score <= 7){
-        resultDisplay.innerHTML = "Pas mal, tu as " + score + " bonnes réponse sur 10 entraîne toi et reessaye."
-        score1Display.setAttribute("class", "middleRate")
-    }
     if(score >= 8){
-        resultDisplay.innerHTML = "Excellent, tu as " + score + " bonnes réponse sur 10 Felicitation !"
-        score1Display.setAttribute("class", "goodRate")
+        resultDisplay.innerHTML = "Excellent, tu as " + score + " bonnes réponse sur 10 Felicitation !";
+        score1Display.setAttribute("class", "goodRate");
+    }
+    
+    else if(score >= 5 && score <= 7){
+        resultDisplay.innerHTML = "Pas mal, tu as " + score + " bonnes réponse sur 10 entraîne toi et reessaye.";
+        score1Display.setAttribute("class", "middleRate");
+    }
+    else if(score <= 4 || score == 0){
+        resultDisplay.innerHTML = "Dommage tu n'as fait que " + score + " bonnes réponse sur 10 entraîne toi et reessaye.";
+        score1Display.setAttribute("class", "badRate");
+    }
+    else{
+        resultDisplay.innerHTML = "Un problème est survenu ! " + score;
     }
 }
 
