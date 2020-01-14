@@ -152,10 +152,11 @@ label{
 }
 
 .slider img{
+	display: block;
+	margin: auto;
 	margin-top: 1rem;
 	width: 600px; 
 	height: 450px;
-	margin-left: 25rem;
 	border: 10px ridge rgb(180,180,180);
 	transform: rotate(5deg);
 	background: black;
@@ -186,4 +187,13 @@ section + section{
 }
 .displayed{
 	display: inline-block;
+}
+.badRate{
+	color: rgb(153, 28, 24);
+}
+.middleRate{
+	color: rgb(212, 177, 21);
+}
+.goodRate{
+	color: rgb(8, 121, 4);
 }

@@ -42,6 +42,7 @@ var photoNumber = Math.floor(Math.random()*momentsPhotos.length)
 // Fonctions
 
 function nextPhoto (){
+    event.preventDefault();
     photoNumber++   
     if (photoNumber == momentsPhotos.length) {
         photoNumber = 0;
@@ -55,6 +56,7 @@ function nextPhoto (){
 }
 
 function previewPhoto (){
+    event.preventDefault();
     photoNumber--
     if (photoNumber == -1) {
         photoNumber = momentsPhotos.length-1
@@ -67,7 +69,8 @@ function previewPhoto (){
     }
 }
 
-function sliderPlay (){
+function sliderPlay (event){
+    event.preventDefault();
     if (boleenPlay==false) {
         timeNext = setInterval(nextPhoto, 1500)
         boleenPlay = true
@@ -80,7 +83,8 @@ function sliderPlay (){
     }
 }
 
-function randomPhoto(){
+function randomPhoto(event){
+    event.preventDefault();
     let random = Math.floor(Math.random()*momentsPhotos.length)
     while (random == photoNumber) {
         random = Math.floor(Math.random()*momentsPhotos.length)
