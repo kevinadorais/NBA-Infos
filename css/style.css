@@ -197,3 +197,6 @@ section + section{
 .goodRate{
 	color: rgb(8, 121, 4);
 }
+.none{
+	display: none;
+}

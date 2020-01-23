@@ -7,7 +7,6 @@
 				<li><a href="news.php">Dernières Infos</a></li>
 				<li><a href="moments.php">Moments Forts</a></li>
 				<li><a href="quizz.php">Quizz</a><li>
-				<li><a href="oneVsOne.php">One VS One</a><li>
 			</ul>
 		</nav>
 		<hr>
@@ -27,8 +26,6 @@
   			delay: anime.stagger(50, {direction: 'reverse'})
 		});
 	</script>
-	<script type="text/javascript" src="js/quizz.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>

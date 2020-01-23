@@ -6,3 +6,4 @@
     <button id='quizz3'>QuizZ 3 (hard)</button><div id='score3'></div>
     <div id='quizzDisplay'></div>
 </section>
+<script type="text/javascript" src="js/quizz.js"></script>

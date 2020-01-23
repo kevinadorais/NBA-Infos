@@ -2,19 +2,16 @@ var quizz1Button = document.getElementById('quizz1');
 var quizz2Button = document.getElementById('quizz2');
 var quizz3Button = document.getElementById('quizz3');
 
-var quizz1Score = 0;
-
 function quizz1Display(){
-    console.log('quizz1selected');
     $.get('quizz/quizz1.php', quizzDisplay);   
 }
 
 function quizz2Display(){
-    console.log('quizz2selected');
+    $.get('quizz/quizz2.php', quizzDisplay); 
 }
 
 function quizz3Display(){
-    console.log('quizz3selected');
+    $.get('quizz/quizz3.php', quizzDisplay);
 }
 
 function quizzDisplay(response){

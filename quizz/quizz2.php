@@ -59,8 +59,8 @@
     <input type='radio' name='question10' value='3' id='3'>Ja Morant</input><br>
     <input type='radio' name='question10' value='4' id='4'>Montrezl Harrell</input><br><br>
 
-    <button id='quizz1Submit'>Valider</button>
-    <button id='quizz2Submit' class='none'>Valider</button>
+    <button id='quizz1Submit' class='none'>Valider</button> 
+    <button id='quizz2Submit'>Valider</button>
     <button id='quizz3Submit' class='none'>Valider</button>
 </fieldset>
 <script type="text/javascript" src="./js/result.js"></script>
