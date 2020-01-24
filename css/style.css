@@ -200,3 +200,9 @@ section + section{
 .none{
 	display: none;
 }
+#timerDisplay{
+	border: 2px solid rgb(185, 18, 13) ;
+	padding: 1rem;
+	color: rgb(185, 18, 13);
+	margin-bottom: 2rem;
+}

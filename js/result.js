@@ -4,6 +4,8 @@ var score3Display = document.getElementById('score3');
 var quizz1Submit = document.getElementById('quizz1Submit');
 var quizz2Submit = document.getElementById('quizz2Submit');
 var quizz3Submit = document.getElementById('quizz3Submit');
+var timerDisplay = document.getElementById('timerDisplay');
+var timer = 350;
 
 function quizz1Verify(){
     let score = 0;
@@ -49,31 +51,31 @@ function quizz2Verify(){
     if ($("input[name=question1]:checked").val() == '3') {
         score++;
     }       
-    if ($("input[name=question2]:checked").val() == '3') {
+    if ($("input[name=question2]:checked").val() == '4') {
         score++;
     }
-    if ($("input[name=question3]:checked").val() == '2') {
+    if ($("input[name=question3]:checked").val() == '3') {
         score++;
     }
     if ($("input[name=question4]:checked").val() == '3') {
         score++;
     }
-    if ($("input[name=question5]:checked").val() == '3') {
+    if ($("input[name=question5]:checked").val() == '1') {
         score++;
     }
-    if ($("input[name=question6]:checked").val() == '3') {
+    if ($("input[name=question6]:checked").val() == '1') {
         score++;
     }
-    if ($("input[name=question7]:checked").val() == '2') {
+    if ($("input[name=question7]:checked").val() == '3') {
         score++;
     }
-    if ($("input[name=question8]:checked").val() == '1') {
+    if ($("input[name=question8]:checked").val() == '2') {
         score++;
     }
-    if ($("input[name=question9]:checked").val() == '4') {
+    if ($("input[name=question9]:checked").val() == '1') {
         score++;
     }
-    if ($("input[name=question10]:checked").val() == '1') {
+    if ($("input[name=question10]:checked").val() == '2') {
         score++;
     }
 
@@ -93,25 +95,25 @@ function quizz3Verify(){
     if ($("input[name=question3]:checked").val() == '2') {
         score++;
     }
-    if ($("input[name=question4]:checked").val() == '3') {
+    if ($("input[name=question4]:checked").val() == '4') {
         score++;
     }
-    if ($("input[name=question5]:checked").val() == '3') {
+    if ($("input[name=question5]:checked").val() == '1') {
         score++;
     }
-    if ($("input[name=question6]:checked").val() == '3') {
+    if ($("input[name=question6]:checked").val() == '4') {
         score++;
     }
-    if ($("input[name=question7]:checked").val() == '2') {
+    if ($("input[name=question7]:checked").val() == '4') {
         score++;
     }
-    if ($("input[name=question8]:checked").val() == '1') {
+    if ($("input[name=question8]:checked").val() == '4') {
         score++;
     }
-    if ($("input[name=question9]:checked").val() == '4') {
+    if ($("input[name=question9]:checked").val() == '3') {
         score++;
     }
-    if ($("input[name=question10]:checked").val() == '1') {
+    if ($("input[name=question10]:checked").val() == '4') {
         score++;
     }
 
@@ -121,6 +123,7 @@ function quizz3Verify(){
 
 function resultDisplay (score, scoreDisplay){
     $('#quizzDisplay').empty();
+    clearInterval(quizzTimer);
 
     if(score >= 8){
         scoreDisplay.setAttribute("class", "goodRate");
@@ -139,6 +142,27 @@ function resultDisplay (score, scoreDisplay){
     }
 };
 
+function quizzSetTimer(){
+    timer = 350;
+    
+    quizzTimer = setInterval(function(){
+        timer--;
+        timerDisplay.innerHTML = 'Temps Restant : ' + timer + 's';
+        if (timer == 0){
+            if($("#quizz1Submit").hasClass("quizzSelected")==true){
+                quizz1Verify();
+            }
+            if($("#quizz2Submit").hasClass("quizzSelected")==true){
+                quizz2Verify();
+            }
+            if($("#quizz3Submit").hasClass("quizzSelected")==true){
+                quizz3Verify();
+            }
+        }
+    },1000);
+}
+
 quizz1Submit.addEventListener('click', quizz1Verify);
 quizz2Submit.addEventListener('click', quizz2Verify);
 quizz3Submit.addEventListener('click', quizz3Verify);
+quizzSetTimer();

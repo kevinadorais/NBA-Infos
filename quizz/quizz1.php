@@ -1,4 +1,5 @@
 <fieldset>
+    <div id='timerDisplay'></div>
     <label for='question1'>#1 : Quelle est le premier joueur français de l'histoire qui a vue son maillot être retiré d'une franchise ?</label><br>
     <input type='radio' name='question1' value='1' id='1'>Mickaël Piétrus</input><br>
     <input type='radio' name='question1' value='2' id='2'>Joackim Noah</input><br>
@@ -29,7 +30,7 @@
     <input type='radio' name='question5' value='3' id='3'>Boston Celtics</input><br>
     <input type='radio' name='question5' value='4' id='4'>Philadelphie 76ers</input><br><br>
 
-    <label for='question6'>#6 : Combien Michael Jordan a gagné de titre NBA ? ?</label><br>
+    <label for='question6'>#6 : Combien Michael Jordan a gagné de titre NBA ?</label><br>
     <input type='radio' name='question6' value='1' id='1'>4</input><br>
     <input type='radio' name='question6' value='2' id='2'>5</input><br>
     <input type='radio' name='question6' value='3' id='3'>6</input><br>
@@ -59,7 +60,7 @@
     <input type='radio' name='question10' value='3' id='3'>Ja Morant</input><br>
     <input type='radio' name='question10' value='4' id='4'>Montrezl Harrell</input><br><br>
 
-    <button id='quizz1Submit'>Valider</button>
+    <button id='quizz1Submit' class='quizzSelected'>Valider</button>
     <button id='quizz2Submit' class='none'>Valider</button>
     <button id='quizz3Submit' class='none'>Valider</button>
 </fieldset>
