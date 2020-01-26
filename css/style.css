@@ -174,20 +174,6 @@ section + section{
 	font-weight: bold;
 	text-decoration: underline;
 }
-#playBox{
-	background-image: url('../img/oneVsOne/J17T4T.jpg');
-	width: 95%;
-	height: 40rem;
-}
-#playBox p{
-	text-align: center;
-}
-.hidden{
-	display: none;
-}
-.displayed{
-	display: inline-block;
-}
 .badRate{
 	color: rgb(153, 28, 24);
 }

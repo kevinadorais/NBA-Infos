@@ -45,23 +45,6 @@
 			<p>Championnat NBA :<br>".$selectedTeam[0][6]."</p>
 			<p>Maillots Retiré :<br>".$selectedTeam[0][7]."</p>";
 			?>
-			<table>
-				<thead>
-					<tr>
-						<th colspan="2">Effectif</th>
-					</tr>
-					<tr>
-						<th>Joueur</th>
-						<th>Postes</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>						
-				</tbody>
-			</table>
 		</article>
 	</section>
 </main>

@@ -41,7 +41,7 @@ var photoNumber = Math.floor(Math.random()*momentsPhotos.length)
 
 // Fonctions
 
-function nextPhoto (){
+function nextPhoto (event){
     event.preventDefault();
     photoNumber++   
     if (photoNumber == momentsPhotos.length) {
@@ -55,7 +55,7 @@ function nextPhoto (){
     }
 }
 
-function previewPhoto (){
+function previewPhoto (event){
     event.preventDefault();
     photoNumber--
     if (photoNumber == -1) {
@@ -72,14 +72,27 @@ function previewPhoto (){
 function sliderPlay (event){
     event.preventDefault();
     if (boleenPlay==false) {
-        timeNext = setInterval(nextPhoto, 1500)
-        boleenPlay = true
-        playButton.innerHTML='<i class="fas fa-pause"></i>'
+        timeNext = setInterval(intervalNextPhoto, 1500);
+        boleenPlay = true;
+        playButton.innerHTML='<i class="fas fa-pause"></i>';
     }
     else if(boleenPlay==true){
-        clearInterval(timeNext)
-        boleenPlay = false
-        playButton.innerHTML='<i class="fas fa-play"></i>'
+        clearInterval(timeNext);
+        boleenPlay = false;
+        playButton.innerHTML='<i class="fas fa-play"></i>';
+    }
+}
+
+function intervalNextPhoto (){
+    photoNumber++   
+    if (photoNumber == momentsPhotos.length) {
+        photoNumber = 0;
+        sliderImg.src = momentsPhotos[photoNumber].lien
+        sliderTitle.innerHTML= momentsPhotos[photoNumber].title
+    }
+    else{
+        sliderImg.src = momentsPhotos[photoNumber].lien
+        sliderTitle.innerHTML= momentsPhotos[photoNumber].title
     }
 }
 

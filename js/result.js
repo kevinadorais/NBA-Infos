@@ -122,8 +122,10 @@ function quizz3Verify(){
 };
 
 function resultDisplay (score, scoreDisplay){
+    
     $('#quizzDisplay').empty();
     clearInterval(quizzTimer);
+    quizzButtonToggle();
 
     if(score >= 8){
         scoreDisplay.setAttribute("class", "goodRate");
@@ -141,7 +143,7 @@ function resultDisplay (score, scoreDisplay){
         $('#quizzDisplay').append("Un problème est survenu ! " + score);
     }
 };
-
+    
 function quizzSetTimer(){
     timer = 350;
     
