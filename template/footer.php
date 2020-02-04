@@ -3,7 +3,8 @@
 		<nav>
 			<ul>
 				<li><a href="index.php">Accueil</a></li>
-				<li><a href="classementSelect">Classement</a></li>
+				<li><a href="rankingSelect">Classement</a></li>
+				<li><a href="teamSelect.php">Equipe</a></li>
 				<li><a href="news.php">Dernières Infos</a></li>
 				<li><a href="moments.php">Moments Forts</a></li>
 				<li><a href="quizz.php">Quizz</a><li>
@@ -26,6 +27,5 @@
   			delay: anime.stagger(50, {direction: 'reverse'})
 		});
 	</script>
-	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

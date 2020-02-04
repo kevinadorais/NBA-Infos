@@ -1,6 +1,6 @@
 <main class="transition">
 	<section>
-		<h2>Moments Forts Saison 2019</h2>
+		<h2>Moments Forts de la Saison 2019.</h2>
 	</section>
 	<div class="slider">
 		<section>

@@ -9,5 +9,5 @@ else{
 include 'php/database.class.php';
 $classement = readClassement($conf, $database);
 $selectedTeam = readTeam($id, $database);
-include 'pages/classementsdetail.page.php'; 
+include 'pages/rankingDetail.page.php'; 
 include 'template/footer.php'; 

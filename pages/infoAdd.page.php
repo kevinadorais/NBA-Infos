@@ -1,5 +1,6 @@
 <main>
     <section>
+        <h2>Ajouter une info.</h2>
         <fieldset>
             <form method="post" action="php/infoAddExe">
                 <label for="title">Titre de l'Info :</label><br>

@@ -1,10 +1,22 @@
+/*********************Global********************/
+
 body{
 	background-image: url("https://www.basketusa.com/wp-content/uploads/2011/10/when-nothing-happens-1280x960.jpg");
 	background-attachment: fixed;
 	background-size: cover;
-	background-color: black;
-	background-repeat: no-repeat;
 }
+a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 2rem;
+	padding: 0.4rem;
+}
+a:hover{
+	background-color: rgb(145, 0, 0);
+	
+}
+/*********************Header********************/
+
 header{
 	background-color: rgba(50,50,50,0.8);
 }
@@ -25,11 +37,7 @@ nav ul{
 	display: flex;
 	justify-content: space-around;
 }
-a{
-	text-decoration: none;
-	color: rgb(255, 255, 255);
-	font-size: 2rem;
-}
+/*******************Pages*******************/
 
 section{
 	margin: auto;
@@ -39,60 +47,35 @@ section{
 	background-color: rgba(50,50,50,0.8);
 	padding: 2rem;
 }
-section article{
+h2{
+	text-align: center;
+	margin: 2rem;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+p{
+	margin: 1rem 2rem;
+}
+section ul{
+	margin: 1rem 2rem;
+}
+section li{
+	list-style: outside;
+	margin-left: 3rem;
+}
+
+/*****************Ranking*****************/
+
+.confLogo{
 	display: inline-block;
 	width: 49%;
 	border: 0.5px solid rgba(120,120,120,0.8);
 	color: rgb(255, 255, 255);
 	vertical-align: top;
 }
-p{
-	margin: 1rem 2rem;
-}
-article a{
+.confLogo a{
 	display: flex;
 	justify-content: center;
-}
-h2{
-	text-align: center;
-	margin: 2rem;
-}
-table{
-	width: 100%;
-}
-th{
-	border: 0.5px solid rgba(120,120,120,0.8);
-	color: rgb(255, 255, 255)
-}
-td img{
-	float: left;
-	width: 2rem;
-	height: 2rem;
-}
-.teamLogo{
-	width: 15rem;
-	height: 10rem;
-	margin-left: 30%;
-	text-align: center;
-}
-td{
-	border: 0.5px solid rgba(120,120,120,0.8);
-	color: rgb(255, 255, 255)
-}
-footer{
-	background-color: rgba(50,50,50,0.8);
-	color: rgb(255, 255, 255);
-}
-.copyright{
-	margin: auto;
-	width: 80%;
-	font-style: italic;
-}
-footer img{
-	width: 3rem;
-	height: 3rem;
-	text-align: center;
-	float: left;
 }
 .leftColor{
 	background-color: red;
@@ -100,25 +83,68 @@ footer img{
 .rightColor{
 	background-color: blue;
 }
-
-
-
-.news img{
-	display: flex;
-	margin-left: 25%;
-	width: 50%;
-	height: 25rem;
-	box-shadow: 3px 3px black, -1em 0 .4em red
+table{
+	width: 100%;
+	margin: 2rem 0rem;
 }
-.news p{
-	font-size: 1.2rem;
-	margin: 2rem;
+th{
+	border: 0.5px solid rgba(120,120,120,0.8);
+	color: rgb(255, 255, 255);
+	padding: 0.5rem 0rem;
+}
+td{
+	border: 0.5px solid rgba(120,120,120,0.8);
+	color: rgb(255, 255, 255);
+	padding: 0.5rem 0rem;
+}
+th img{
+	width: 2rem;
+	height: 2rem;
+	margin-left: 1rem;
+}
+td img{
+	float: left;
+	width: 2rem;
+	height: 2rem;
+}
+.rankingDetailDiv{
+	display: inline-block;
+	width: 49%;
+	border: 0.5px solid rgba(120,120,120,0.8);
+	color: rgb(255, 255, 255);
+	vertical-align: top;
+}
+.teamLogo{
+	width: 15rem;
+	height: 10rem;
+	margin-left: 30%;
 	text-align: center;
+}
+/*******************News****************/
+.news{
+	border: 1px solid black;
+	background-color: rgba(26, 26, 26, 0.877);
 }
 .news h2{
 	font-weight: bold;
 	text-decoration: underline overline #FF3028;
 }
+.news img{
+	display: inline-block;
+	margin-left: 5%;
+	width: 50%;
+	height: 25rem;
+	box-shadow: 3px 3px black, -1em 0 .4em red
+}
+.newsContent{
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+	font-size: 1.2rem;
+	margin: 2rem;
+	text-align: center;
+}
+
 .infoAdd{
 	background-color: red;
 	border: 1px dashed white;
@@ -150,6 +176,7 @@ form .sendButton{
 label{
 	text-decoration: underline;
 }
+/*******************Slider******************/
 
 .slider img{
 	display: block;
@@ -158,7 +185,6 @@ label{
 	width: 600px; 
 	height: 450px;
 	border: 10px ridge rgb(180,180,180);
-	transform: rotate(5deg);
 	background: black;
 }
 section + section{
@@ -174,6 +200,8 @@ section + section{
 	font-weight: bold;
 	text-decoration: underline;
 }
+/********************Quizz*****************/
+
 .badRate{
 	color: rgb(153, 28, 24);
 }
@@ -191,4 +219,21 @@ section + section{
 	padding: 1rem;
 	color: rgb(185, 18, 13);
 	margin-bottom: 2rem;
+}
+/***************Footer******************/
+
+footer{
+	background-color: rgba(50,50,50,0.8);
+	color: rgb(255, 255, 255);
+}
+.copyright{
+	margin: auto;
+	width: 80%;
+	font-style: italic;
+}
+footer img{
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	float: left;
 }

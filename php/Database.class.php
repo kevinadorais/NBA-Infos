@@ -13,8 +13,14 @@ $database = new PDO('mysql:host=localhost;dbname=nbainfos', 'root' , '');
 
 		$query = $database->prepare("SELECT * FROM team WHERE teamId = ? ");
 		$query->execute ([$id]);
-		return $classement = $query->fetchAll();
+		return $selectedTeam = $query->fetchAll();
 	};
+
+	function readTeamByApiTeamId($id, $database){
+		$query = $database->prepare("SELECT * FROM team WHERE apiTeamId = ? ") ;
+		$query->execute([$id]) ;
+		return $selectedTeam = $query->fetchAll() ;
+	}
 
 	function infoRead($database, $page){
 

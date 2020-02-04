@@ -1,15 +1,19 @@
 <main class="transition">
     <section>
-        <a class='infoAdd' href="infoAdd">Envoyé Une Info !</a><br>
-        <?php 
-        for ($i = 0; $i < count($info) ; $i++) {
-            print("<div class='news'><h2>".$info[$i]['title']."</h2><br>
-                <img src='".$info[$i]['img']."'><br>
-                <p>".$info[$i]['content']."</p>
-                <p><a href='infoEdit.php?id=".$info[$i]['infoId']."'>Modifier</a> - <a href='php/infoRemoveExe.php?id=".$info[$i]['infoId']."'>Supprimer</a></p>
-                </div>");
-        }
-        ?>
+        <h2>Les dernières infos en NBA.</h2>
+        <a class='infoAdd' href="infoAdd">Envoyé Une Info !</a>
+        <br>
+        <?php for ($i = 0; $i < count($info) ; $i++):?> 
+            <article class='news'>
+                <h2> <?= $info[$i]['title'] ?></h2>
+                <img src='<?= $info[$i]['img'] ?>'>
+                <div class="newsContent">
+                    <p><?= $info[$i]['content'] ?></p>
+                    <a href='infoEdit.php?id=<?= $info[$i]['infoId'] ?>'>Modifier</a> - 
+                    <a href='php/infoRemoveExe.php?id=<?= $info[$i]['infoId'] ?>'>Supprimer</a>
+                </div> 
+            </article>
+        <?php endfor;?>
         <div class='pagination'>
         <?php 
         if($page > 2){

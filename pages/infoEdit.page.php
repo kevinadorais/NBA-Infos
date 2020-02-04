@@ -1,5 +1,6 @@
 <main>
     <section>
+        <h2>Modifier une info.</h2>
         <fieldset>
             <form method="post" action="php/infoEditExe">
                 <input type="hidden" name="infoId" value="<?= $info[0]['infoId'] ?>">
