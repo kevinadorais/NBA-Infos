@@ -1,6 +1,7 @@
 <footer>
 		<hr>
-		<nav>
+		<a href="#" id="toggleButton2"><i class="fas fa-bars"></i></a>
+		<nav id="Navbar2" class="hiddenNavbar">
 			<ul>
 				<li><a href="index.php">Accueil</a></li>
 				<li><a href="rankingSelect">Classement</a></li>
@@ -9,6 +10,7 @@
 				<li><a href="moments.php">Moments Forts</a></li>
 				<li><a href="quizz.php">Quizz</a><li>
 			</ul>
+			<a href="#" id="secondToggleButton2"><i class="fas fa-bars"></i></a>
 		</nav>
 		<hr>
 		<div class="copyright">
@@ -27,5 +29,6 @@
   			delay: anime.stagger(50, {direction: 'reverse'})
 		});
 	</script>
+	<script type="text/javascript" src="js/navbar.js"></script>
 </body>
 </html>

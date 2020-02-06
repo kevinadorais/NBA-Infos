@@ -1,4 +1,4 @@
-<fieldset>
+<fieldset class="quizz">
     <div id='timerDisplay'></div>
     <label for='question1'>#1 : Quelle est le premier joueur français de l'histoire qui a vue son maillot être retiré d'une franchise ?</label><br>
     <input type='radio' name='question1' value='1' id='1'>Mickaël Piétrus</input><br>

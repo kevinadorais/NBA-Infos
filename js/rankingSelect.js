@@ -1,26 +1,26 @@
 // Variables
 
-var leftLogo = document.getElementById('confwest');
-var rightLogo = document.getElementById('confeast');
-var leftDiv = document.getElementById('confwestColored');
-var rightDiv = document.getElementById('confeastColored');
+var leftLogo = document.getElementById('confWest');
+var rightLogo = document.getElementById('confEast');
+var leftDiv = document.getElementById('confWestColored');
+var rightDiv = document.getElementById('confEastColored');
 
 // Fonctions
 
 function leftColorChange(){
-leftDiv.classList.add("leftColor");
+leftDiv.classList.add("westColor");
 }
 
 function leftColorReturn(){
-leftDiv.classList.remove('leftColor');
+leftDiv.classList.remove('westColor');
 }
 
 function rightColorChange(){
-rightDiv.classList.add('rightColor');
+rightDiv.classList.add('eastColor');
 }
 
 function rightColorReturn(){
-rightDiv.classList.remove('rightColor');
+rightDiv.classList.remove('eastColor');
 }
 
 // Code

@@ -1,0 +1,130 @@
+@media screen and (max-width: 1050px){
+    table a{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 890px){
+    header img{
+        float: none;
+        display: block;
+    }
+    h1{
+        display: block;
+        text-align: center;
+    }
+    nav a{
+        font-size: 1rem;
+    }
+    section{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    form input{
+        margin-left: 0rem;
+        width: 100%;
+    }
+    .teamSelectTab a:hover{
+        background-color: inherit;
+    }
+    .teamSelectLogo{
+        display: flex;
+        justify-content: center;
+    }
+    .hiddenTeamName{
+        display: none;
+    }
+    .slider nav a{
+        font-size: 2rem;
+    }
+    footer{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 750px){
+    section{
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+    td{
+        font-size: 0.7rem;
+    }
+    .news img{
+        display: block;
+        width: 90%;
+        height: 30%;
+    }
+    .newsContent{
+        display: block;
+        font-size: 1rem;
+        width: 98%;
+        padding: 0.5rem;
+    }
+    #visiblePhoto{
+        width: 95%;
+        height: 35%;
+    }
+    #sliderTitle{
+        text-align: center;
+        margin-left: 0rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 550px){
+    table a{
+        font-size: 1rem;
+    }
+    section li{
+        margin-left: 0.5rem;
+    }
+    #toggleButton1{
+        display: flex;
+        justify-content: center;
+    }
+    #secondToggleButton1{
+        display: flex;
+        justify-content: center;
+    }
+    #toggleButton2{
+        display: flex;
+        justify-content: center;
+    }
+    #secondToggleButton2{
+        display: flex;
+        justify-content: center;
+    }
+    i{
+        font-size: 2rem;
+    }
+    .hiddenNavbar{
+        display: none;
+    }
+    nav ul{
+		display: block;
+		flex-direction: column;
+	}
+	nav li{
+        display: flex;
+        justify-content: center;
+    }
+    .slider nav a{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 375px){
+    .confDiv{
+        display: block;
+        width: 100%;
+    }
+    .infoAdd{
+        font-size: 1rem;
+    }
+    .newsContent{
+        font-size: 0.7rem;
+    }
+    fieldset{
+        margin-left: 0.5rem;
+    }
+    .quizz{
+        margin-right: 0.5rem;
+    }
+}

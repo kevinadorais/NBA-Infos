@@ -33,6 +33,12 @@ h1{
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }
+#toggleButton1{
+	display: none;
+}
+#secondToggleButton1{
+	display: none;
+}
 nav ul{
 	display: flex;
 	justify-content: space-around;
@@ -66,22 +72,25 @@ section li{
 
 /*****************Ranking*****************/
 
-.confLogo{
+.confDiv{
 	display: inline-block;
 	width: 49%;
 	border: 0.5px solid rgba(120,120,120,0.8);
 	color: rgb(255, 255, 255);
 	vertical-align: top;
 }
-.confLogo a{
+.confDiv a{
 	display: flex;
 	justify-content: center;
 }
-.leftColor{
-	background-color: red;
+.confDiv a:hover{
+	background-color: inherit;
 }
-.rightColor{
-	background-color: blue;
+.westColor{
+	background-color: rgb(200, 0, 0);
+}
+.eastColor{
+	background-color: rgb(0, 0, 200);
 }
 table{
 	width: 100%;
@@ -96,6 +105,8 @@ td{
 	border: 0.5px solid rgba(120,120,120,0.8);
 	color: rgb(255, 255, 255);
 	padding: 0.5rem 0rem;
+	text-align: center;
+	font-size: 1rem;
 }
 th img{
 	width: 2rem;
@@ -123,7 +134,8 @@ td img{
 /*******************News****************/
 .news{
 	border: 1px solid black;
-	background-color: rgba(26, 26, 26, 0.877);
+	background-color: rgba(59, 59, 59, 0.877);
+	width: 100%;
 }
 .news h2{
 	font-weight: bold;
@@ -132,16 +144,16 @@ td img{
 .news img{
 	display: inline-block;
 	margin-left: 5%;
-	width: 50%;
-	height: 25rem;
+	width: 45%;
+	height: 30%;
 	box-shadow: 3px 3px black, -1em 0 .4em red
 }
 .newsContent{
 	display: inline-block;
 	vertical-align: top;
-	width: 40%;
+	width: 35%;
 	font-size: 1.2rem;
-	margin: 2rem;
+	padding: 2rem;
 	text-align: center;
 }
 
@@ -165,12 +177,14 @@ form input{
 	background-color: rgba(180,180,180,0.6);
 }
 form textarea{
+	width: 100%;
 	padding: 0.5rem 1rem;
 	margin-top: 1rem;
 	background-color: rgba(180,180,180,0.6);
 }
 form .sendButton{
-	margin-left: 40%;
+	margin: 0rem;
+	width: 100%;
 	padding: 1rem 2rem;
 }
 label{
@@ -236,4 +250,10 @@ footer img{
 	height: 3rem;
 	text-align: center;
 	float: left;
+}
+#toggleButton2{
+	display: none;
+}
+#secondToggleButton2{
+	display: none;
 }
