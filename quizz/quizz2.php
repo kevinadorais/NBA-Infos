@@ -1,4 +1,4 @@
-<fieldset>
+<fieldset class="quizz">
     <div id='timerDisplay'></div>
     <label for='question1'>#1 : Combien de fois Ben Wallace à été elue Meilleur Defenseur de l'annéé ?</label><br>
     <input type='radio' name='question1' value='1' id='1'>2</input><br>

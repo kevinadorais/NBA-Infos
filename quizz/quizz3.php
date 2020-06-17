@@ -1,4 +1,4 @@
-<fieldset>
+<fieldset class="quizz">
     <div id='timerDisplay'></div>
     <label for='question1'>#1 : Combien de fois Bill Russel a été elue MVP ?</label><br>
     <input type='radio' name='question1' value='1' id='1'>3</input><br>
